@@ -15,8 +15,10 @@ body {
   background-position: center;
   font-family: 'Inter', sans-serif;
 }
+
 ::placeholder {
   color: black;
+  font-size: 15px;
 }
 
 .container header {
@@ -32,31 +34,71 @@ h1 {
   font-family: 'Alkatra', 'cursive';
 }
 
-#cad_form, #edit-form {
-  
-  font-family: 'Alkatra', 'cursive';
-  font-size: 30px;
-  padding: 1rem;
-  border-bottom: 1px solid #CCC;
-}
-
-#cad_form p, 
-#edit-form p {
+#cad_form p {
   margin-bottom: 0.5rem;
   font-weight: bold;
   color:black;
 }
 
+#cad_form, 
+#form-control {
+  align-items: center;
+  font-family: 'Alkatra', 'cursive';
+  font-size: 30px;
+  padding: 1rem;
+  border-bottom: 1px solid #CCC;
+  display: flex;
+  flex-direction: column;
+}
+
+#cad_input {
+  padding: 0.3rem 0.5rem;
+  opacity: 0.7;
+  line-height: 10px;
+  margin-right: 0.5rem;
+  width: 15rem;
+}
+
+#edit-cad, 
+.edit-form {
+  align-items: center;
+  font-family: 'Alkatra', 'cursive';
+  font-size: 30px;
+  padding: 1rem;
+  border-bottom: 1px solid #CCC;
+  display: flex;
+  flex-direction: column;
+}
+.edit-input {
+  padding: 0.3rem 0.5rem;
+  opacity: 0.7;
+  line-height: 10px;
+  margin-right: 0.5rem;
+  width: 15rem;
+}
+
 button {
-  margin-top: 100px;
+  cursor: pointer;
+  margin-top: 91px;
   padding: 10px 20px;
   font-weight: 700;
+  align-items: center;
   font-size: 20px;
   line-height: 24px;
   border-radius: 15px;
   background-color: #FFC700;
   color: black;
   opacity: 0.7;
+}
+
+button i {
+  pointer-events: none;
+  color: black;
+  font-weight: bold;
+}
+
+button:hover > i {
+  color: #FFC700;
 }
 
 button:hover, 
@@ -67,17 +109,11 @@ button:hover,
   opacity: 0.7;
 }
 
-button i {
-  color: #102F5e;
-  font-weight: bold;
-  pointer-events: none;
-}
 
-input, select {
-  width: 20rem;
-  background-color: #FFC700;
-  padding: 0.25rem 0.5rem;
-  opacity: 0.7;
-  line-height: 24px;
-  font-size: 20px;
-}
+
+
+
+
+
+
+

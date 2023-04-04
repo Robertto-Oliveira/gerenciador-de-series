@@ -13,7 +13,7 @@
     <title>Gerenciador de Séries</title>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <script src="script.js" defer=""></script>
+    
 </head>
 <body>
     
@@ -24,18 +24,87 @@
         <form id="cad_form">
             <p>Cadastre a sua série preferida</p>
             <div class="form-control">
+                
                 <input type="text" id="cad_input" placeholder="Adicione uma série">
-                <button type="submit">
-                    <i class="fa-solid fa-plus"></i>   
+                
+                <input type="text" id="cad_input" placeholder="Adicione uma temporada">
+                
+                <input type="text" id="cad_input" placeholder="Adicione um episódio">
+                
+                <button type="submit" >
+                    <i class="fa-solid fa-plus-circle"></i>   
                 </button>
+
             </div>
         </form>
-    </div>
-    <div id="button">
-        <a href="index.html">
-        <button id="btn_secondary">VOLTAR</button>
-        </a>
-    </div>
+        
+        <form id="edit-cad" class="">
+            <p>Editar</p>
+            <div class="edit-form">
+                <input type="text" id="edit-input" placeholder="Editar informação">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button type="button" id="cancel-edit-btn">Cancelar</button>
+        </form>
+        <!--
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Pesquisar">
+                    <button type="button" id="erase-button" aria-placeholder="Limpar">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <div id="filter">
+                <h4>Filtrar</h4>
+                <select aria-label="filter" id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="season">Temporada</option>
+                    <option value="episode">Episódio</option>
+                </select>
+            </div>
+        </div>
+        <div id="list">
+            <div class="done">
+                <h3>Adicionada nova temporada</h3>
+                <button type="button" class="finished">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button type="button" class="edit-list">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button type="button" class="remove">
+                    <i class="fa-solid fa-xmark-circle"></i>
+                </button>
+            </div>
+            <div id="list">
+                <h3>Adicionar nova temporada</h3>
+                <button type="button" class="finish-list">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                
+                <button type="button" class="edit-list">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+
+                <button type="button" class="remove-list">
+                    <i class="fa-solid fa-xmark-circle"></i>
+                </button>
+            </div>
+        </div>
+    </div>-->
+    <form id="btn">
+        <div id="button">
+            <a href="index.html">
+                <button id="btn_secondary">VOLTAR</button>
+            </a>
+        </div>
+    </form>
     
 </body>
 </html>
