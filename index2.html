@@ -5,8 +5,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,38 +19,50 @@
     
 </head>
 <body>
-    
-    <div class="container">
+    <div>
         <header>
             <h1>Cadastro de Séries</h1>
+            <h2>Cadastre a sua série preferida</h2>
         </header>
-        <form id="cad_form">
-            <p>Cadastre a sua série preferida</p>
-            <div class="form-control">
-                
+    </div>
+    <div class="container">
+        
+        
+        <form id="cad-form">   
+            
+            <div id="cadastro">
+                <label for="txt" id="h3">Nome da Série</label>  
                 <input type="text" id="cad_input" placeholder="Adicione uma série">
-                
+                <br>
+
+                <label for="txt" id="h3">Temporada</label>
                 <input type="text" id="cad_input" placeholder="Adicione uma temporada">
-                
+                <br>
+
+                <label for="txt" id="h3">Episódio</label>
                 <input type="text" id="cad_input" placeholder="Adicione um episódio">
-                
+                <br>
                 <button type="submit" >
-                    <i class="fa-solid fa-plus-circle"></i>   
+                    ADICIONAR
                 </button>
 
-            </div>
+                <button type="submit" >
+                    CANCELAR   
+                </button>
+            </div> 
+            
         </form>
         
         <form id="edit-cad">
             
-            <div id="edit-form">
-                <p>Editar</p>
+            
+                <label for="txt" id="h3">Editar</label>
                 <input type="text" id="edit-input" placeholder="Editar informação">
                 <button id="edit-btn" type="submit">
                     <i class="fa-solid fa-check-double"></i>
                 </button>
-            </div>
-            <!--<button type="button" id="cancel-edit-btn">Cancelar</button> -->
+            
+            
         </form>
         <!--
         <div id="toolbar">
@@ -97,9 +112,9 @@
                     <i class="fa-solid fa-xmark-circle"></i>
                 </button>
             </div>
-        </div>
-    </div>-->
-    <button onclick="window.location.href='index.html'">ENTRAR</button>
+        </div> -->
+    </div>
+    <button onclick="window.location.href='index.html'">VOLTAR</button>
     
 </body>
 </html>
