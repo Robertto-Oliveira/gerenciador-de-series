@@ -7,18 +7,19 @@
 
 body {
     text-align: center;
-    padding-top: 160px;
     background-image: url("Movie Night-cuate.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     background-position: center;
     font-family: 'Alkatra', 'cursive';
-  }
+}
+
 
 .container {
-  text-align: center;
-  padding: 0 1rem 1rem;
+  align-content: center;
+  padding: 1.5rem;
+  margin: 50px 100px 50px;
 }
 
 .header {

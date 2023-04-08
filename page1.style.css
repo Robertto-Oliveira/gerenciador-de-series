@@ -7,7 +7,7 @@
 
 body {
   text-align: center;
-  background-image: url("Movie\ Night-cuate.png");
+  background-image: url("Movie Night-cuate.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -18,6 +18,7 @@ body {
 ::placeholder {
   color: black;
   font-size: 15px;
+  font-weight: bold;
 }
 
 .container {
@@ -25,6 +26,7 @@ body {
   padding: 1.5rem;
   margin: 50px 100px 50px;
 }
+
 header {
   margin: 50px 100px 50px;
   text-align: center;
@@ -57,7 +59,7 @@ h2 {
 }
 
 #cadastro,
-#edit-cad {
+.search-form {
   margin: 0 auto;
   box-sizing: border-box;
   padding: 1rem;
@@ -74,45 +76,44 @@ h2 {
   color: black;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
-  
+}
+#h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Alkatra', 'cursive';
 }
 
 input {
   padding: 0.3rem 0.5rem;
   line-height: 10px;
-  width: 20rem;
+  width: 70%;
+  font-weight: bold;
+}
+
+input:hover {
+  background-color: lightgray;
 }
 
 button {
   cursor: pointer;
   padding: 5px 10px;
-  font-weight: bold;
+  font-weight: 600;
   align-items: center;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 24px;
   border-radius: 15px;
   background-color: #FFC700;
-  color: black;
-  opacity: 0.7;
 }
 
-button i {
-  pointer-events: none;
-  color: black;
-  font-weight: bold;
-}
-
-button:hover > i {
-  color: #FFC700;
-}
-
-button:hover, 
-.btn_secondary {
+button:hover {
   text-decoration: none;
   color: #FFC700;
   background-color: black;
-  opacity: 0.7;
 }
+
 
 
 

@@ -13,9 +13,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerenciador de Séries</title>
-    <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="page1.style.css">
+    
+    <title>Gerenciador de Séries</title>
+    
     
 </head>
 <body>
@@ -26,9 +28,8 @@
         </header>
     </div>
     <div class="container">
-        
-        
-        <form id="cad-form">   
+                
+        <form id="cad-form" action="submit">   
             
             <div id="cadastro">
                 <label for="txt" id="h3">Nome da Série</label>  
@@ -42,28 +43,27 @@
                 <label for="txt" id="h3">Episódio</label>
                 <input type="text" id="cad_input" placeholder="Adicione um episódio">
                 <br>
-                <button type="submit" >
+                <button type="submit" id="add-btn">
                     ADICIONAR
                 </button>
 
-                <button type="submit" >
-                    CANCELAR   
+                <button type="button" id="cancel-btn">
+                    LIMPAR  
                 </button>
             </div> 
             
         </form>
         
-        <form id="edit-cad">
-            
-            
-                <label for="txt" id="h3">Editar</label>
-                <input type="text" id="edit-input" placeholder="Editar informação">
-                <button id="edit-btn" type="submit">
-                    <i class="fa-solid fa-check-double"></i>
+        <form class="search-form" action="page2.html">
+
+            <label for="txt" id="h4">BUSCAR SÉRIES</label>
+            <input type="text" id="search-input" placeholder="Buscar série">
+                <button id="search-btn" onclick="window.location.href='page2.html'">
+                    <i class="fa-solid fa-search"></i>
                 </button>
-            
-            
+                     
         </form>
+        
         <!--
         <div id="toolbar">
             <div id="search">
@@ -114,7 +114,7 @@
             </div>
         </div> -->
     </div>
-    <button onclick="window.location.href='index.html'">VOLTAR</button>
+    <button onclick="window.location.href='home.html'">HOME</button>
     
 </body>
 </html>
