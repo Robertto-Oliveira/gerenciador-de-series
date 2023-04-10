@@ -32,6 +32,8 @@
         <form id="cad-form" action="submit">   
             
             <div id="cadastro">
+                <p>CADASTRAR SÉRIE</p>
+
                 <label for="txt" id="h3">Nome da Série</label>  
                 <input type="text" id="cad_input" placeholder="Adicione uma série">
                 <br>
@@ -43,7 +45,7 @@
                 <label for="txt" id="h3">Episódio</label>
                 <input type="text" id="cad_input" placeholder="Adicione um episódio">
                 <br>
-                <button type="submit" id="add-btn">
+                <button type="button" id="add-btn">
                     ADICIONAR
                 </button>
 
@@ -54,67 +56,55 @@
             
         </form>
         
-        <form class="search-form" action="page2.html">
-
-            <label for="txt" id="h4">BUSCAR SÉRIES</label>
-            <input type="text" id="search-input" placeholder="Buscar série">
-                <button id="search-btn" onclick="window.location.href='page2.html'">
-                    <i class="fa-solid fa-search"></i>
-                </button>
-                     
-        </form>
-        
-        <!--
-        <div id="toolbar">
+        <form id="search-form" action="page2.html">
             <div id="search">
-                <h4>Pesquisar</h4>
-                <form>
-                    <input type="text" id="search-input" placeholder="Pesquisar">
-                    <button type="button" id="erase-button" aria-placeholder="Limpar">
-                        <i class="fa-solid fa-delete-left"></i>
-                    </button>
-                </form>
-            </div>
-            
-            <div id="filter">
-                <h4>Filtrar</h4>
-                <select aria-label="filter" id="filter-select">
-                    <option value="all">Todos</option>
-                    <option value="season">Temporada</option>
-                    <option value="episode">Episódio</option>
-                </select>
-            </div>
-        </div>
-        <div id="list">
-            <div class="done">
-                <h3>Adicionada nova temporada</h3>
-                <button type="button" class="finished">
-                    <i class="fa-solid fa-check"></i>
+                <p>BUSCAR SÉRIE</p>
+
+                <label for="txt" id="h4">Nome da Série</label>
+                <input type="text" id="search-input" placeholder="Nome da série">
+                <label for="txt" id="h4">Temporada</label>  
+                <input type="text" id="cad_input" placeholder="Temporada">
+                <br> 
+                <button type="submit" id="cancel-btn">
+                    BUSCAR 
                 </button>
-                <button type="button" class="edit-list">
-                    <i class="fa-solid fa-pen"></i>
-                </button>
-                <button type="button" class="remove">
-                    <i class="fa-solid fa-xmark-circle"></i>
-                </button>
-            </div>
-            <div id="list">
-                <h3>Adicionar nova temporada</h3>
-                <button type="button" class="finish-list">
-                    <i class="fa-solid fa-check"></i>
+                <button type="button" id="cancel-btn">
+                    LIMPAR  
                 </button>
                 
-                <button type="button" class="edit-list">
-                    <i class="fa-solid fa-pen"></i>
+            </div>         
+        </form>
+
+        <form id="edit-form" action="submit">   
+            
+            <div id="editar">
+                <p>EDITAR INFORMAÇÕES</p>
+
+                <label for="txt" id="h3">Nome da Série</label>  
+                <input type="text" id="cad_input" placeholder="Editar o nome da série">
+                <br>
+
+                <label for="txt" id="h3">Temporada</label>
+                <input type="text" id="cad_input" placeholder="Editar a temporada">
+                <br>
+
+                <label for="txt" id="h3">Episódio</label>
+                <input type="text" id="cad_input" placeholder="Editar o episódio">
+                <br>
+                <button type="button" id="edit-btn">
+                    EDITAR
                 </button>
 
-                <button type="button" class="remove-list">
-                    <i class="fa-solid fa-xmark-circle"></i>
+                <button type="button" id="cancel-btn">
+                    LIMPAR  
                 </button>
-            </div>
-        </div> -->
-    </div>
-    <button onclick="window.location.href='home.html'">HOME</button>
-    
+            </div> 
+        </form>
+    </div>        
+        
+
+        <button onclick="window.location.href='home.html'">HOME</button>
+        
+        
 </body>
 </html>
