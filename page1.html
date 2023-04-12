@@ -24,50 +24,56 @@
     <div>
         <header>
             <h1>Cadastro de Séries</h1>
-            <h2>Cadastre a sua série preferida</h2>
+            <h2>Cadastre as suas séries preferidas</h2>
         </header>
     </div>
     <div class="container">
                 
-        <form id="cad-form" action="submit">   
+        <form class="cad-form" action="submit">   
             
-            <div id="cadastro">
+            <div class="cadastro">
                 <p>CADASTRAR SÉRIE</p>
 
-                <label for="txt" id="h3">Nome da Série</label>  
+                <label for="txt">Nome da Série</label>  
                 <input type="text" id="cad_input" placeholder="Adicione uma série">
                 <br>
 
-                <label for="txt" id="h3">Temporada</label>
-                <input type="text" id="cad_input" placeholder="Adicione uma temporada">
+                <label for="txt">Temporada</label>
+                <input type="number" id="cad_input" placeholder="Adicione uma temporada">
                 <br>
 
-                <label for="txt" id="h3">Episódio</label>
-                <input type="text" id="cad_input" placeholder="Adicione um episódio">
+                <label for="txt">Episódio</label>
+                <input type="number" id="cad_input" placeholder="Adicione um episódio">
                 <br>
-                <button type="button" id="add-btn">
-                    ADICIONAR
-                </button>
+                
+                <div class="wrapper"></div>
+                    <button type="button" id="add-btn">
+                        ADICIONAR
+                    </button>
 
-                <button type="button" id="cancel-btn">
-                    LIMPAR  
-                </button>
+                    <button type="button" id="cancel-btn">
+                        LIMPAR  
+                    </button>
+                </form>
             </div> 
             
         </form>
         
-        <form id="search-form" action="page2.html">
-            <div id="search">
+        <form class="search-form" action="page2.html">
+            <div class="search">
                 <p>BUSCAR SÉRIE</p>
 
-                <label for="txt" id="h4">Nome da Série</label>
+                <label for="txt">Nome da Série</label>
                 <input type="text" id="search-input" placeholder="Nome da série">
-                <label for="txt" id="h4">Temporada</label>  
-                <input type="text" id="cad_input" placeholder="Temporada">
-                <br> 
-                <button type="submit" id="cancel-btn">
+
+                <label for="text">Temporada</label>  
+                <input type="number" id="cad_input" placeholder="Temporada">
+                <br>
+
+                <button type="submit" id="search-btn">
                     BUSCAR 
                 </button>
+
                 <button type="button" id="cancel-btn">
                     LIMPAR  
                 </button>
@@ -75,21 +81,21 @@
             </div>         
         </form>
 
-        <form id="edit-form" action="submit">   
+        <form class="edit-form" action="submit">   
             
-            <div id="editar">
+            <div class="editar">
                 <p>EDITAR INFORMAÇÕES</p>
 
-                <label for="txt" id="h3">Nome da Série</label>  
+                <label for="txt">Nome da Série</label>  
                 <input type="text" id="cad_input" placeholder="Editar o nome da série">
                 <br>
 
-                <label for="txt" id="h3">Temporada</label>
-                <input type="text" id="cad_input" placeholder="Editar a temporada">
+                <label for="txt">Temporada</label>
+                <input type="number" id="cad_input" placeholder="Editar a temporada">
                 <br>
 
-                <label for="txt" id="h3">Episódio</label>
-                <input type="text" id="cad_input" placeholder="Editar o episódio">
+                <label for="txt">Episódio</label>
+                <input type="number" id="cad_input" placeholder="Editar o episódio">
                 <br>
                 <button type="button" id="edit-btn">
                     EDITAR
@@ -101,9 +107,18 @@
             </div> 
         </form>
     </div>        
-        
-
-        <button onclick="window.location.href='home.html'">HOME</button>
+               
+    <div class="cont">
+        <div class="center">
+            <button class="btn"onclick="window.location.href='index.html'">
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>HOME</span>
+            </button>
+        </div>
+    </div>
         
         
 </body>
