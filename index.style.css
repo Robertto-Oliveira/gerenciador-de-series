@@ -16,89 +16,10 @@ body {
   font-family: 'Alkatra', 'cursive';
 }
 
-.container {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center {
-  width: 180px;
-  height: 60px;
-  position: absolute;
-}
-
 .btn {
-  color: black;
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 2px solid #ff533c;
-  outline: none;
-  transition: 1s ease-in-out;
-}
-
-svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: black;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-}
-
-.btn:hover {
-  color: #FF725E;
-  transition: 1s ease-in-out;
-  background-color: black;
-  
-}
-
-.btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.btn span {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-header {
-  color: black;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 70px;
-}
-
-h1 {
-  color: black;
-  font-weight: 400;
-  font-size: 44px;
-  line-height: 60px;
-  font-family: 'Alkatra', 'cursive';
-}
-
-h2 {
-  color: black;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 80px;
-  font-family: 'Alkatra', 'cursive';
-}
-
-/*button {
   border: none;
   cursor: pointer;
-  margin-top: 140px;
+  margin-top: 260px;
   padding: 10px 20px;
   align-items: center;
   font-weight: 700;
@@ -108,12 +29,12 @@ h2 {
   background-color: #FF725E;
 }
 
-button:hover {
+.btn:hover {
   text-decoration: none;
   color: #FF725E;
   background-color: black;
   transition: 0.2s;
-}*/
+}
 
 
 

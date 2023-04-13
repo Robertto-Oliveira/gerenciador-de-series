@@ -6,7 +6,7 @@
   }
 
 body {
-  overflow: hidden;
+  /*overflow: hidden;*/
   text-align: center;
   background-image: url("img/Home-cinema-pana.png");
   background-repeat: no-repeat;
@@ -52,9 +52,10 @@ h2 {
   font-family: 'Alkatra', 'cursive';
 }
 
-.cad-form, 
+.cad-form,
+.edit-form,
 .search-form,
-.edit-form {
+#pesquisar-form {
   align-items: center;
   padding: 1rem;
   font-size: 30px;
@@ -70,6 +71,35 @@ h2 {
   border-radius: 15px;
   max-width: 500px;
   background-color: rgb(255,114,94, 0.7);
+}
+
+.pesquisar {
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 15px;
+  max-width: 500px;
+  background-color: rgb(255,114,94, 0.7);
+}
+
+#filter {
+  margin-top: 1rem;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter-select {
+  padding: 0 auto;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  line-height: 10px;
+  width: 70%;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
 }
 
 label {
@@ -117,63 +147,6 @@ button:hover {
   transition: 0.2s;
 }
 
-.cont {
-  margin-top: 300px;
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center {
-  width: 180px;
-  height: 60px;
-  position: absolute;
-}
-
-.btn {
-  color: black;
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 2px solid #ff533c;
-  outline: none;
-  transition: 1s ease-in-out;
-}
-
-svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: black;
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-}
-
-.btn:hover {
-  color: #FF725E;
-  transition: 1s ease-in-out;
-  background-color: black;
-  
-}
-
-.btn:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.btn span {
-  
-  font-size: 18px;
-  font-weight: 500;
-}
 
 
 

@@ -46,41 +46,43 @@
                 <input type="number" id="cad_input" placeholder="Adicione um episódio">
                 <br>
                 
-                <div class="wrapper"></div>
-                    <button type="button" id="add-btn">
-                        ADICIONAR
-                    </button>
+                
+                    <button type="button" id="add-btn">ADICIONAR</button>
 
-                    <button type="button" id="cancel-btn">
-                        LIMPAR  
-                    </button>
-                </form>
-            </div> 
-            
-        </form>
+                    <button type="button" id="cancel-btn">LIMPAR</button>
+                
+            </div>
+        </form> 
         
-        <form class="search-form" action="page2.html">
+        <form class="search-form" action="submit">
             <div class="search">
                 <p>BUSCAR SÉRIE</p>
 
-                <label for="txt">Nome da Série</label>
-                <input type="text" id="search-input" placeholder="Nome da série">
-
-                <label for="text">Temporada</label>  
-                <input type="number" id="cad_input" placeholder="Temporada">
-                <br>
-
-                <button type="submit" id="search-btn">
-                    BUSCAR 
-                </button>
-
-                <button type="button" id="cancel-btn">
-                    LIMPAR  
-                </button>
+                <label for="txt">Pesquisar</label>
                 
-            </div>         
-        </form>
+                    <select name="filter" id="filter-select" required="required">
+                        <option value="">Selecione uma opção</option>
+                        <option value="serie">Série</option>
+                        <option value="temporada">Temporada</option>
+                        <option value="episode">Episódio</option>
+                    </select>
+                <br>
+                
+                <button type="button" id="search-btn">PESQUISAR</button>
 
+                <button type="button" id="cancel-btn">LIMPAR</button>
+            </div>
+
+            <form id="pesquisar-form" class="hide">
+                <div class="pesquisar">
+                    <p>RESULTADO DA PESQUISA</p>
+                </div> 
+            </form>
+
+                    
+        </form>
+    
+    
         <form class="edit-form" action="submit">   
             
             <div class="editar">
@@ -97,27 +99,18 @@
                 <label for="txt">Episódio</label>
                 <input type="number" id="cad_input" placeholder="Editar o episódio">
                 <br>
-                <button type="button" id="edit-btn">
-                    EDITAR
-                </button>
+                <button type="button" id="edit-btn">EDITAR</button>
 
-                <button type="button" id="cancel-btn">
-                    LIMPAR  
-                </button>
+                <button type="button" id="cancel-btn">LIMPAR</button>
+
             </div> 
         </form>
-    </div>        
-               
-    <div class="cont">
-        <div class="center">
-            <button class="btn"onclick="window.location.href='index.html'">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                <span>HOME</span>
-            </button>
-        </div>
+           
+        
+    </div>
+
+    <div class="btn">
+        <button class="btn"onclick="window.location.href='index.html'">HOME</button>
     </div>
         
         
