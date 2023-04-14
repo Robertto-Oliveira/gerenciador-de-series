@@ -59,22 +59,15 @@ h2 {
   align-items: center;
   padding: 1rem;
   font-size: 30px;
-  width: 33.3%;
+  width: 33%;
   font-family: 'Alkatra', 'cursive';
 }
 
 .cadastro,
 .search,
-.editar {
-  margin: 0 auto;
-  padding: 1rem;
-  border-radius: 15px;
-  max-width: 500px;
-  background-color: rgb(255,114,94, 0.7);
-}
-
+.editar,
 .pesquisar {
-  margin: 1.5rem auto;
+  margin: 0 auto;
   padding: 1rem;
   border-radius: 15px;
   max-width: 500px;
