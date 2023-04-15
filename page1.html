@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -28,9 +28,10 @@
     </div>
     <div class="container">
                 
-        <form class="cad-form" action="submit">   
-            
+        <form class="cad-form" action="submit">
+                      
             <div class="cadastro">
+                               
                 <p>CADASTRAR SÉRIE</p>
 
                 <label for="txt">Nome da Série</label>  
@@ -38,42 +39,43 @@
                 <br>
 
                 <label for="txt">Temporada</label>
-                <input type="number" id="cad_input" placeholder="Adicione uma temporada">
+                <input type="number" id="cad_input" min="1" max="40" placeholder="Adicione uma temporada">
                 <br>
 
                 <label for="txt">Episódio</label>
-                <input type="number" id="cad_input" placeholder="Adicione um episódio">
+                <input type="number" id="cad_input" min="1" max="40" placeholder="Adicione um episódio">
                 <br>
                                 
                     <button type="button" id="add-btn">ADICIONAR</button>
 
                     <button type="button" id="cancel-btn">LIMPAR</button>
             </div>
+            
         </form> 
         
-        <form class="search-form" action="submit">
+        <form class="search-form" action="">
             <div class="search">
-                <p>BUSCAR SÉRIE</p>
+                <p>PESQUISAR SÉRIE</p>
 
-                <label for="txt">Pesquisar</label>
                 
-                    <select name="filter" id="filter-select" required="required">
-                        <option value="">Selecione uma opção</option>
-                        <option value="serie">Série</option>
-                        <option value="temporada">Temporada</option>
-                        <option value="episode">Episódio</option>
-                    </select>
+                
+                <label for="txt">Nome da Série</label>  
+                <input type="text" id="cad_input" placeholder="Pesquisar uma série">
                 <br>
-                
-                <button type="button" id="search-btn">PESQUISAR</button>
+
+                <label for="txt">Temporada</label>
+                <input type="number" id="cad_input" min="1" placeholder="Pesquisar uma temporada">
+                <br>
+
+                <button type="submit" id="search-btn">PESQUISAR</button>
 
                 <button type="button" id="cancel-btn">LIMPAR</button>
             </div>
         </form>
         
-        <form id="pesquisar-form" class="">
+        <form id="result-form" class="">
                 
-            <div class="pesquisar">
+            <div class="result">
                 <p>RESULTADO DA PESQUISA</p>
                 <button type="button">LIMPAR</button>    
             </div>
@@ -98,7 +100,7 @@
                 <input type="number" id="cad_input" placeholder="Editar o episódio">
                 <br>
                 <button type="button" id="edit-btn">EDITAR</button>
-
+                <button type="button" id="delete-btn">APAGAR</button>
                 <button type="button" id="cancel-btn">LIMPAR</button>
 
             </div> 
