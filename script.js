@@ -25,4 +25,28 @@ exitBtn.addEventListener("click", function() {
     document.getElementById('result-form').style.display = 'none';
 });
 
+const addBtn = document.getElementById("add-btn");
+const serieInput = document.getElementById("serie-input");
+const seasonInput = document.getElementById("season-input");
+const episodeInput = document.getElementById("episode-input");
+addBtn.addEventListener("click", () => {
+    const serieInputValue = serieInput.value;
+    const seasonInputValue = seasonInput.value;
+    const episodeInputValue = episodeInput.value;
+    alert(serieInputValue);
+    alert(seasonInputValue);
+    alert(episodeInputValue);
+});
+
+/*const seasonInput = document.getElementById("season-input");
+addBtn.addEventListener("click", () => {
+    const seasonInputValue = seasonInput.value;
+    alert(seasonInputValue);
+});
+
+const episodeInput = document.getElementById("episode-input");
+addBtn.addEventListener("click", () => {
+    const episodeInputValue = episodeInput.value;
+    alert(episodeInputValue);
+});*/
 

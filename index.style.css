@@ -1,5 +1,5 @@
 * {
-    margin-top: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -20,8 +20,8 @@ body {
 .btn {
   border: none;
   cursor: pointer;
-  margin-top: 200px;
-  margin-bottom: 486px;
+  margin-top: 300px;
+  margin-bottom: 473px;
   padding: 10px 20px;
   align-items: center;
   font-weight: 700;
